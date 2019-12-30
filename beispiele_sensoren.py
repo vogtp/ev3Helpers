@@ -19,5 +19,5 @@ distanz = distanz_sensor.distance()
 print("Distanz: ", distanz_sensor.distance(), " mm")
 
 # Etwas machen, wenn Distanz zu kurz
-if distanz_sensor.distance() < 50:
+if distanz_sensor.distance() < 100:
     print("Etwas ist nahe")

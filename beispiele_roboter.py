@@ -18,7 +18,7 @@ achsen_abstand=114
 roboter = DriveBase(linker_motor, rechter_motor, rad_durchmesser, achsen_abstand)
 
 # Fahren
-geschwindigkeit = 10 # mm/s   (Milimeter pro Sekunde)
+geschwindigkeit = 100 # mm/s   (Milimeter pro Sekunde)
 steuern = 0          # Grad/s (360 Grad ist ganzer Kreis)
 zeit = 1000          # ms     (1000ms ist eine Sekunde)
 
@@ -26,11 +26,11 @@ zeit = 1000          # ms     (1000ms ist eine Sekunde)
 roboter.drive(geschwindigkeit, steuern) 
 
 # Eine zeitlang fahren
-roboter.drive(geschwindigkeit, steuern, zeit) 
+roboter.drive_time(geschwindigkeit, steuern, zeit) 
 
 # Um einen 1/4 Drehen 
-roboter.drive(0,10,1000) # langsam
-roboter.drive(0,30,3000) # schnell
+roboter.drive_time(0,10,9000) # langsam
+roboter.drive_time(0,300,300) # schnell
 
 # Bremsen
 roboter.stop(Stop.BRAKE)
