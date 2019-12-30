@@ -15,7 +15,7 @@ def knopf_gedrückt():
     """
     return any(brick.buttons())
 
-def warten_auf_knopf_gedrückt():
+def warten_bis_knopf_gedrückt():
     """
     Warten bis ein Knopf gedrückt
     """
@@ -35,7 +35,7 @@ def warten_am_anfang():
     # "hello" abspielen
     brick.sound.file(SoundFile.HELLO)
     
-    warten_auf_knopf_gedrückt()
+    warten_bis_knopf_gedrückt()
     
     # bild: /!\
     brick.display.image(ImageFile.WARNING)
