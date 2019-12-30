@@ -16,6 +16,8 @@ rechter_motor = Motor(Port.C)
 rad_durchmesser=56
 achsen_abstand=114
 roboter = DriveBase(linker_motor, rechter_motor, rad_durchmesser, achsen_abstand)
+# oder 
+roboter = DriveBase(Motor(Port.B), Motor(Port.C), 56, 114)
 
 # Fahren
 geschwindigkeit = 100 # mm/s   (Milimeter pro Sekunde)
@@ -24,9 +26,13 @@ zeit = 1000          # ms     (1000ms ist eine Sekunde)
 
 # Fahren bis ein anderer Befehl kommt
 roboter.drive(geschwindigkeit, steuern) 
+# oder
+roboter.drive(100,0)
 
 # Eine zeitlang fahren
 roboter.drive_time(geschwindigkeit, steuern, zeit) 
+# oder
+roboter.drive_time(100, 0, 1000) 
 
 # Um einen 1/4 Drehen 
 roboter.drive_time(0,10,9000) # langsam
