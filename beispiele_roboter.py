@@ -28,6 +28,10 @@ roboter.drive(geschwindigkeit, steuern)
 # Eine zeitlang fahren
 roboter.drive(geschwindigkeit, steuern, zeit) 
 
+# Um einen 1/4 Drehen 
+roboter.drive(0,10,1000) # langsam
+roboter.drive(0,30,3000) # schnell
+
 # Bremsen
 roboter.stop(Stop.BRAKE)
 
