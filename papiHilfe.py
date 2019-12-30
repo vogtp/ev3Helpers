@@ -83,6 +83,9 @@ def bilder_zeigen():
             i = 0
         if Button.DOWN in buttons:
             break
+        print("i={}".format(i))
+        if abs(i) >= len(members):
+            i=0
 
 def sound_abspielen():
     '''
@@ -115,3 +118,6 @@ def sound_abspielen():
             i = 0
         if Button.DOWN in buttons:
             break
+        print("i={}".format(i))
+        if not i < len(members):
+            i=0
