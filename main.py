@@ -8,13 +8,22 @@ from pybricks.parameters import (Port, Stop, Direction, Button, Color,
 from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
 
+
 import papiHilfe 
 
 # warten zum starten
 papiHilfe.warten_am_anfang()
 
-# Ab hier programieren
+# Ein roboter erstellen:
+linker_motor = Motor(Port.B)
+rechter_motor = Motor(Port.C)
+rad_durchmesser=56
+achsen_abstand=114
+robot = DriveBase(linker_motor, rechter_motor, rad_durchmesser, achsen_abstand)
 
+
+
+# Ab hier programieren
 
 # Haupt-Schleife 
 # Läuft bis: stop=False  (gesetzt wird)

@@ -6,6 +6,9 @@ from pybricks.parameters import (Port, Stop, Direction, Button, Color,
 from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
 
+# Auto completion installieren:
+# pip install pybricks-stubs
+
 def knopf_gedrückt():
     """
     Ist ein Knopf gedrückt?
