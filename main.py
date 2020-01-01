@@ -8,7 +8,7 @@ from pybricks.robotics import DriveBase
 import papiHilfe 
 
 # warten zum starten
-papiHilfe.warten_am_anfang()
+papiHilfe.wartenAmAnfang()
 
 # Ab hier programieren
 
@@ -21,7 +21,7 @@ while not stop:
 
 
     # Abbruch wenn irgend ein Knofp gedrückt wird
-    if papiHilfe.knopf_gedrückt():
+    if papiHilfe.knopfGedruckt():
         # Damit wird die Haupt-Schleide gestopped
         stop=True
         

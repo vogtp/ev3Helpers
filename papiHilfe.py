@@ -7,20 +7,20 @@ from pybricks.robotics import DriveBase
 # Auto completion installieren:
 # pip install pybricks-stubs
 
-def knopf_gedrückt():
+def knopfGedruckt():
     """
     Ist ein Knopf gedrückt?
     """
     return any(brick.buttons())
 
-def warten_bis_knopf_gedrückt():
+def wartenBisKnopfGedruckt():
     """
     Warten bis ein Knopf gedrückt
     """
-    while not knopf_gedrückt():
+    while not knopfGedruckt():
         wait(10)
 
-def warten_am_anfang():
+def wartenAmAnfang():
     """
     Am Anfang eines Programmes warten bis ein Knopf gedrückt wird und danach noch eine halbe Sekunde
     """
@@ -33,7 +33,7 @@ def warten_am_anfang():
     # "hello" abspielen
     brick.sound.file(SoundFile.HELLO)
     
-    warten_bis_knopf_gedrückt()
+    wartenBisKnopfGedruckt()
     
     # bild: /!\
     brick.display.image(ImageFile.WARNING)
@@ -50,7 +50,7 @@ def warten_am_anfang():
     # Bildschirm löschen
     brick.display.clear()   
 
-def bilder_zeigen():
+def bilderZeigen():
     '''
     Zeigt alle Bilder
     '''
@@ -85,7 +85,7 @@ def bilder_zeigen():
         if abs(i) >= len(members):
             i=0
 
-def sound_abspielen():
+def soundAbspielen():
     '''
     Spielt alle Töne ab
     '''
