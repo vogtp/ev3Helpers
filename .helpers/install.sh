@@ -6,3 +6,5 @@ cp *.py /Users/debby/.vscode/extensions/lego-education.ev3-micropython-1.0.3/res
 
 mv main.py main_templeate.py 
 mv main.temp main.py 
+
+pip3 install pybricks-stubs
