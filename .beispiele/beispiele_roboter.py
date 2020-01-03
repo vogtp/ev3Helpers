@@ -14,7 +14,7 @@ from pybricks.robotics import DriveBase
 linker_motor = Motor(Port.B)
 rechter_motor = Motor(Port.C)
 rad_durchmesser=56
-achsen_abstand=133
+achsen_abstand=133 
 roboter = DriveBase(linker_motor, rechter_motor, rad_durchmesser, achsen_abstand)
 # oder 
 roboter = DriveBase(Motor(Port.B), Motor(Port.C), 56, 133)
