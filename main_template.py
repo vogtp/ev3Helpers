@@ -14,16 +14,14 @@ papiHilfe.wartenAmAnfang()
 
 
 # Haupt-Schleife 
-# Läuft bis: stop=False  (gesetzt wird)
-stop=False
-while not stop:
+while 1:
     # Hier kommt das Program, das Laufen soll während der Roboter aktiv ist
 
 
-    # Abbruch wenn irgend ein Knofp gedrückt wird
+    
     if papiHilfe.knopfGedruckt():
         # Damit wird die Haupt-Schleide gestopped
-        stop=True
+        break
         
     wait(10)
 
