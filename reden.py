@@ -1,11 +1,9 @@
 from pybricks import ev3brick as brick
-from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor, InfraredSensor, UltrasonicSensor, GyroSensor)
-from pybricks.parameters import (Port, Stop, Direction, Button, Color, SoundFile, ImageFile, Align)
+from pybricks.parameters import ( Color, SoundFile, ImageFile, Align)
 from pybricks.tools import print, wait, StopWatch
 import sys 
 import os
 from threading import Thread
-import subprocess
 
 class Reden(Thread):
 
@@ -32,7 +30,7 @@ class Reden(Thread):
     def run(self):
        # self.popen = os.popen("/usr/bin/aplay -i",buffering=1)
         self.started = True
-        self._espeak("Hallo")
+        self._espeak("Start reden")
         try:
             while 1:
                 if self._msg:
@@ -53,6 +51,7 @@ class Reden(Thread):
             lang="-vde"
         print(msg)
         os.system("/usr/bin/espeak -a 200 --stdout '{}' {} | /usr/bin/aplay -i".format(msg,lang))
+
         
       #  brick.sound.file("out.wav",volume=100)
       #popen.write("/usr/bin/espeak -a 200 --stdout 'test'")
