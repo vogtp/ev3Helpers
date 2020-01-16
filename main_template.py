@@ -9,7 +9,7 @@ from reden import Reden
 import papiHilfe 
 
 # warten zum starten
-papiHilfe.wartenAmAnfang()
+#papiHilfe.wartenAmAnfang()
 
 # Ab hier programieren
 
